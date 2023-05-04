@@ -1,4 +1,5 @@
 import { getUser } from "@/app/fetching/fetchData";
+import Image from "next/image";
 
 async function Users({params}) {
     const users = await getUser(params.id)
@@ -7,7 +8,7 @@ async function Users({params}) {
         <div className="col-md-6 offset-md-3">
           <div className="card">
             <div className="card-header">
-              <img src={users.avatar} alt={users.avatar} />
+              <Image width="100" height="100" src={users.avatar} alt={users.avatar} />
             </div>
             <div className="card-body">
               <p>

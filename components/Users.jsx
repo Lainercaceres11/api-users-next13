@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 function Users({ users }) {
 
@@ -21,7 +22,9 @@ function Users({ users }) {
               </h5>
               <p>{user.email}</p>
               <div>
-                <img
+                <Image
+                  width="100"
+                  height="100"
                   src={user.avatar}
                   alt={user.email}
                   style={{ borderRadius: "50%" }}

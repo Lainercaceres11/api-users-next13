@@ -3,13 +3,13 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  // images: {
-  //   remotePatterns: [
-  //     {
-  //       hostname: "https://reqres.in/",
-  //     },
-  //   ],
-  // },
+  images: {
+    remotePatterns: [
+      {
+        hostname: "reqres.in",
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig
