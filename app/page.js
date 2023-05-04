@@ -1,10 +1,5 @@
 import Users from "@/components/Users";
-
-async function fetchUsers (){
-  const res =  await fetch('https://reqres.in/api/users')
-  const response = await res.json();
-  return response.data
-} 
+import { fetchUsers } from "./fetching/fetchData";
 
 async function HomePage() {
   const users = await fetchUsers();

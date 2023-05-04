@@ -1,8 +1,4 @@
-async function getUser (id){
-    const user = await fetch(`https://reqres.in/api/users/${id}`)
-    const data = await user.json()
-    return data.data
-}
+import { getUser } from "@/app/fetching/fetchData";
 
 async function Users({params}) {
     const users = await getUser(params.id)
